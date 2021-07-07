@@ -22,11 +22,11 @@ TEAM := hadenlabs
 REPOSITORY_DOMAIN:=github.com
 REPOSITORY_OWNER:=${TEAM}
 AWS_VAULT ?= ${TEAM}
-PROJECT := base-template
+PROJECT := pagerduty-exporter
 
 PYTHON_VERSION=3.8.0
 PYENV_NAME="${PROJECT}"
-GIT_IGNORES:=python,node,go,zsh
+GIT_IGNORES:=python,go,zsh
 GI:=gi
 
 # issues reviewers
@@ -79,6 +79,7 @@ setup:
 	make python.precommit
 	@[ -e ".env" ] || cp -rf .env.example .env
 	make git.setup
+	make go.setup
 	@echo ${MESSAGE_HAPPY}
 
 ## setup environment of project

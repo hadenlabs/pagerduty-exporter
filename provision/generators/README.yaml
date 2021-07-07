@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: base-template
+name: pagerduty-exporter
 
 email:
   support: support@hadenlabs.com
@@ -17,16 +17,16 @@ email:
 license: 'LGPL-3.0'
 
 # Canonical GitHub repo
-github_repo: hadenlabs/base-template
+github_repo: hadenlabs/pagerduty-exporter
 
 # Badges to display
 badges:
   - name: GitHub release
-    image: https://img.shields.io/github/release/hadenlabs/base-template?style=flat-square
-    url: https://github.com/hadenlabs/base-template/releases/latest
+    image: https://img.shields.io/github/release/hadenlabs/pagerduty-exporter?style=flat-square
+    url: https://github.com/hadenlabs/pagerduty-exporter/releases/latest
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/hadenlabs/base-template/lint-code
-    url: https://github.com/hadenlabs/base-template/actions?workflow=lint-code
+    image: https://img.shields.io/github/workflow/status/hadenlabs/pagerduty-exporter/lint-code
+    url: https://github.com/hadenlabs/pagerduty-exporter/actions?workflow=lint-code
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
@@ -36,10 +36,5 @@ badges:
 
 description: |-
 
-  base-template for project
+  pagerduty-exporter for project
 
-  ### Replace name project to New Project
-
-  ```bash
-    agr 'base-template' 'new-project'
-  ```

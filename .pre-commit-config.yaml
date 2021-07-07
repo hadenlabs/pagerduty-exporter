@@ -1,3 +1,6 @@
+default_stages:
+  - commit
+
 repos:
   - repo: https://github.com/codespell-project/codespell
     rev: v2.1.0
@@ -47,7 +50,7 @@ repos:
       - id: fix-encoding-pragma
       - id: sort-simple-yaml
   - repo: https://github.com/hadenlabs/pre-commit-hooks
-    rev: 5a1cf2bd39307f6ea1ae8c3fa708a399ae74f6eb
+    rev: 1298041a5a096f910b544237c5df67747af2688f
     hooks:
       - id: do-not-commit
       - id: markdown-link-check
@@ -61,7 +64,27 @@ repos:
             .+\.tpl.sh$|
           )$
         args:
-          - --exclude=SC1072,SC1073,SC2068
+          - --exclude=SC1071,SC1073,SC2068
+      - id: validate-toml
+      - id: no-go-testing
+      - id: golangci-lint
+        args:
+          - --fix
+          - --config=.github/linters/.golangci.yml
+      - id: terraform-docs
+        args:
+          - '--output-file=docs/include/terraform.md'
+          - '--output-mode=replace'
+          - '--sort-by-type'
+
+      - id: terraform-tflint
+        args:
+          - '--config=.github/linters/.tflint.hcl'
+      - id: terragrunt-fmt
+      - id: terraform-fmt
+      - id: terraform-tfsec
+
+      - id: checkov
       - id: todocheck
       - id: gitleaks
         args:

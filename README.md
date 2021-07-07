@@ -14,18 +14,12 @@
 
  
 
- [![GitHub release](https://img.shields.io/github/release/hadenlabs/base-template?style=flat-square)](https://github.com/hadenlabs/base-template/releases/latest) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/base-template/lint-code)](https://github.com/hadenlabs/base-template/actions?workflow=lint-code) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+ [![GitHub release](https://img.shields.io/github/release/hadenlabs/pagerduty-exporter?style=flat-square)](https://github.com/hadenlabs/pagerduty-exporter/releases/latest) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/pagerduty-exporter/lint-code)](https://github.com/hadenlabs/pagerduty-exporter/actions?workflow=lint-code) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
 
-# base-template
+# pagerduty-exporter
 
  
-base-template for project
-
-### Replace name project to New Project
-
-```bash
-  agr 'base-template' 'new-project'
-``` 
+pagerduty-exporter for project 
 
 
 
@@ -58,13 +52,13 @@ base-template for project
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/hadenlabs/base-template/issues).
+File a GitHub [issue](https://github.com/hadenlabs/pagerduty-exporter/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/hadenlabs/base-template/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/hadenlabs/pagerduty-exporter/issues) to report any bugs or file feature requests.
 
 ### Development
 
@@ -119,6 +113,6 @@ The code and styles are licensed under the LGPL-3.0 license [See project license
 
 
 
-## Don't forget to 🌟 Star 🌟 the repo if you like base-template
+## Don't forget to 🌟 Star 🌟 the repo if you like pagerduty-exporter
 
-[Your feedback is appreciated](https://github.com/hadenlabs/base-template/issues)
+[Your feedback is appreciated](https://github.com/hadenlabs/pagerduty-exporter/issues)

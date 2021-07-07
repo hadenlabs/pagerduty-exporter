@@ -1,6 +1,6 @@
 # How To Contribute
 
-Contributions to base-template are welcome.
+Contributions to pagerduty-exporter are welcome.
 
 ## Getting Started
 
@@ -48,15 +48,15 @@ Use [slash convention]() with the same leaders as `commits` e.g.:
 
 ### Code Submission
 
-1.  See if a [Pull Request](https://github.com/hadenlabs/base-template/pulls/) exists
+1.  See if a [Pull Request](https://github.com/hadenlabs/pagerduty-exporter/pulls/) exists
     - Add some comments or review the code to help it along
     - Don\'t be afraid to comment when logic needs clarification
-2.  Create a Fork and open a [Pull Request](https://github.com/hadenlabs/base-template/pulls/) if needed
+2.  Create a Fork and open a [Pull Request](https://github.com/hadenlabs/pagerduty-exporter/pulls/) if needed
 
 ### Code Review
 
 - Anyone can review code
-- Any [Pull Request](https://github.com/hadenlabs/base-template/pulls/) should be closed or merged within a week
+- Any [Pull Request](https://github.com/hadenlabs/pagerduty-exporter/pulls/) should be closed or merged within a week
 
 ### Code Acceptance
 

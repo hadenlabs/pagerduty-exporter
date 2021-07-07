@@ -1,11 +1,17 @@
 run:
   timeout: 10m
   deadline: 5m
-
+  skip-dirs:
+    - .gen
+    - node_modules
+  skip-files:
+    - ".*_gen\\.go$"
+    - ".resolvers\\.go$"
   tests: true
 
+
 output:
-  format: tab
+  format: colored-line-number
 
 linters-settings:
   govet:
@@ -44,6 +50,9 @@ linters-settings:
     min-occurrences: 5
 
   lll:
+    # max line length, lines longer will be reported. Default is 120.
+    # '\t' is counted as 1 character by default, and can be changed with the tab-width option
+    line-length: 140
     # tab width in spaces. Default to 1.
     tab-width: 1
 
@@ -116,10 +125,16 @@ linters:
     - wsl
     - testpackage
     - goerr113
+    - interfacer
     - scopelint
 
     # Drives todos nuts
     - godox
+
+
+service:
+  prepare:
+    - GO111MODULE=on go mod vendor # required currently or golangci breaks
 
 issues:
   # Excluding configuration per-path and per-linter
@@ -133,27 +148,11 @@ issues:
         - gosec
         - scopelint
         - unparam
-
-    # - text: "should have a package comment"
-    #   linters:
-    #     - golint
-
-  # Independently from option `exclude` we use default exclude patterns,
-  # it can be disabled by this option. To list all
-  # excluded by default patterns execute `golangci-lint run --help`.
-  # Default value for this option is true.
-  exclude-use-default: false
-
-  # Show only new issues: if there are unstaged changes or untracked files,
-  # only those changes are analyzed, else only changes in HEAD~ are analyzed.
-  # It's a super-useful option for integration of golangci-lint into existing
-  # large codebase. It's not practical to fix all existing issues at the moment
-  # of integration: much better don't allow issues in new code.
-  # Default is false.
-  new: false
-
-  # Maximum issues count per one linter. Set to 0 to disable. Default is 50.
-  max-per-linter: 0
-
-  # Maximum count of issues with the same text. Set to 0 to disable. Default is 3.
-  max-same-issues: 0
+        - exhaustivestruct
+    - path: cmd/
+      linters:
+        - gocyclo
+        - dupl
+        - gochecknoglobals
+        - gochecknoinits
+        - exhaustivestruct
